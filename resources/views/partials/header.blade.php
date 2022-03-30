@@ -1,3 +1,3 @@
 <header class="header_home">
-    QUI CI VA L'HEADER
+    <h1>Flip the card to see Movie Details! </h1>
 </header>

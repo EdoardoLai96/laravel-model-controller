@@ -1,3 +1,15 @@
+.header_home {
+  display: flex;
+  justify-content: center;
+  background-color: #123c66;
+  padding: 2rem;
+  border: 2px solid white;
+}
+
+.header_home h1 {
+  color: white;
+}
+
 * {
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -9,14 +21,14 @@
 }
 
 .main_home {
-  background-color: dodgerblue;
+  background-color: #123c66;
   padding: 3rem;
 }
 
 .main_home .container {
   display: flex;
   flex-wrap: wrap;
-  background-color: goldenrod;
+  background-color: #e9bf55;
   padding: 1rem;
 }
 
@@ -59,6 +71,7 @@
   justify-content: space-evenly;
   background-image: url("/img/copertina_movie.png");
   background-size: contain;
+  background-position: center;
 }
 
 .main_home .container .flip-card .flip-card-inner .flip-card-front h1 {

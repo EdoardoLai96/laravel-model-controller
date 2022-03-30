@@ -1,10 +1,10 @@
 .main_home{
-    background-color: dodgerblue;
+    background-color: rgb(18, 60, 102);
     padding: 3rem;
     .container{
         display: flex;
         flex-wrap: wrap;
-        background-color: goldenrod;
+        background-color: rgb(233, 191, 85);
         padding: 1rem;
         .flip-card {
             background-color: transparent;
@@ -40,6 +40,7 @@
                 justify-content: space-evenly;
                 background-image: url("/img/copertina_movie.png");
                 background-size:contain;
+                background-position: center;
                 h1{
                     padding-bottom: 2rem;
                     font-size: 1.8rem;

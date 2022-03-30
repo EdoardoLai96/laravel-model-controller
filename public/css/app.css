@@ -37,7 +37,6 @@
   background-color: transparent;
   flex-basis: 25%;
   height: 300px;
-  border: 1px solid #f1f1f1;
   perspective: 1000px;
 }
 
@@ -61,6 +60,7 @@
   height: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+  border: 1px solid #f1f1f1;
 }
 
 .main_home .container .flip-card .flip-card-inner .flip-card-front {

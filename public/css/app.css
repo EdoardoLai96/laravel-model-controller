@@ -1,6 +1,87 @@
 * {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+.main_home {
+  background-color: dodgerblue;
+  padding: 3rem;
+}
+
+.main_home .container {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: goldenrod;
+  padding: 1rem;
+}
+
+.main_home .container .flip-card {
+  background-color: transparent;
+  flex-basis: 25%;
+  height: 300px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+}
+
+.main_home .container .flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.main_home .container .flip-card .flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.main_home .container .flip-card .flip-card-inner .flip-card-front,
+.main_home .container .flip-card .flip-card-inner .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.main_home .container .flip-card .flip-card-inner .flip-card-front {
+  background-color: #bbb;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-image: url("/img/copertina_movie.png");
+  background-size: contain;
+}
+
+.main_home .container .flip-card .flip-card-inner .flip-card-front h1 {
+  padding-bottom: 2rem;
+  font-size: 1.8rem;
+}
+
+.main_home .container .flip-card .flip-card-inner .flip-card-front img {
+  width: 100%;
+  height: 100%;
+}
+
+.main_home .container .flip-card .flip-card-inner .flip-card-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: #25A655;
+}
+
+.main_home .container .flip-card .flip-card-inner .flip-card-back p {
+  font-weight: bolder;
 }
 
